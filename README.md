@@ -38,6 +38,8 @@ The folders in the EquiDesign repository:
 
 	GeoSeqBuilder: https://github.com/PKUliujl/GeoSeqBuilder
 
+	ProtSeqGen: https://github.com/NJAU-CDSIC/ProtSeqGen
+
 - **Scripts**: Contains auxiliary scripts for data processing and visualization.
 
 ---
