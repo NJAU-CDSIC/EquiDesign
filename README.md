@@ -14,6 +14,7 @@ The folders in the EquiDesign repository:
 - **EquiDesign_code**: Main code file for the EquiDesign model.
 
 - **SOTA**:Comparative methods used in the contrast experiments:
+
 	SPROF: https://github.com/biomed-AI/SPROF
 
 	ProDCoNN: https://github.com/wells-wood-research/timed-design
