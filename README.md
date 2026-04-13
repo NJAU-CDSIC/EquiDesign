@@ -18,27 +18,27 @@ The folders in the EquiDesign repository:
 
 - **SOTA**:Comparative methods used in the contrast experiments:
 
-	SPROF: https://github.com/biomed-AI/SPROF
+  SPROF: https://github.com/biomed-AI/SPROF
 
-	ProDCoNN: https://github.com/wells-wood-research/timed-design
+  ProDCoNN: https://github.com/wells-wood-research/timed-design
 
-	GraphTrans:https://github.com/jingraham/neurips19-graph-protein-design
+  GraphTrans:https://github.com/jingraham/neurips19-graph-protein-design
 
-	GVP: https://github.com/drorlab/gvp
+  GVP: https://github.com/drorlab/gvp
 
-	GCA: https://github.com/chengtan9907/gca-generative-protein-design
+  GCA: https://github.com/chengtan9907/gca-generative-protein-design
 
-	AlphaDesign: https://github.com/Westlake-drug-discovery/AlphaDesign
+  AlphaDesign: https://github.com/Westlake-drug-discovery/AlphaDesign
 
-	ProteinMPNN: https://github.com/dauparas/ProteinMPNN
+  ProteinMPNN: https://github.com/dauparas/ProteinMPNN
 
-	Frame2seq: https://github.com/dakpinaroglu/Frame2seq
+  Frame2seq: https://github.com/dakpinaroglu/Frame2seq
 
-	PiFold: https://github.com/A4Bio/PiFold
+  PiFold: https://github.com/A4Bio/PiFold
 
-	GeoSeqBuilder: https://github.com/PKUliujl/GeoSeqBuilder
+  GeoSeqBuilder: https://github.com/PKUliujl/GeoSeqBuilder
 
-	ProtSeqGen: https://github.com/NJAU-CDSIC/ProtSeqGen
+  ProtSeqGen: https://github.com/NJAU-CDSIC/ProtSeqGen
 
 - **Scripts**: Contains auxiliary scripts for data processing and visualization.
 
