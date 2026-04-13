@@ -1,0 +1,29 @@
+# Hybrid Score 3：ESM-2 + ESMFold
+#
+# 不要: pip install openfold  （PyPI 同名包错误）
+#
+# 基础:
+#   pip install fair-esm omegaconf "fair-esm[esmfold]"
+#   pip install 'dllogger @ git+https://github.com/NVIDIA/dllogger.git'
+#
+# OpenFold（从源码；与 fair-esm 文档一致 commit）:
+#   git clone https://github.com/aqlaboratory/openfold.git
+#   cd openfold && git checkout 4b41059694619831a7db195b7e0988fc4ff3a307
+# PyTorch 2.5+ 要求 C++17，旧版 setup 里 CUDA 仍用 -std=c++14 会编译失败，可先尝试:
+#   sed -i 's/-std=c++14/-std=c++17/g' setup.py
+#   pip install .
+#
+# 若 OpenFold 仍装不上：可用 eval_design_hybrid_score.py 的 --skip_esmfold
+# （仅 ESM-2，hybrid 列= batch 内 z(ESM-2)，与论文含 pLDDT 的 Hybrid 不同）。
+#
+# 旧 commit 的 OpenFold 与 PyTorch Lightning 2.x 不兼容（seed_everything 导入路径变了），
+# 若报 ImportError: seed_everything from pytorch_lightning.utilities.seed，可：
+#   pip install "pytorch-lightning>=1.9,<2"
+#
+# Python 3.12 + fair-esm 2.x：trunk.py 与 esmfold.py 中 dataclass 可变默认值会报错，装完 fair-esm 后执行一次:
+#   python training/patch_esm_trunk_py312.py
+# （会修补两处；若曾只打过 trunk，请再运行一次本脚本以补 esmfold.py）
+# 或改用 conda 新建 python=3.10 环境（更省事可避开此类兼容问题）。
+#
+fair-esm
+omegaconf
