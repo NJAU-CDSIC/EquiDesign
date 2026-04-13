@@ -1,0 +1,22 @@
+name: equidesign
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - tqdm
+  - matplotlib
+  - python-dateutil
+  - pytorch=2.0.0
+  - pytorch-cuda=11.8
+  - pip:
+      # Optional equivariant layers / irreps
+      # - e3nn
+      #
+      # Hybrid Score 3 (optional; only needed if you run Scripts/stability/*)
+      # - fair-esm
+      # - omegaconf
+
