@@ -129,4 +129,3 @@ If you use EquiDesign in your research, please cite:
   howpublished={\\url{https://github.com/NJAU-CDSIC/EquiDesign}}
 }
 ```
-
