@@ -7,8 +7,11 @@ This is a directory for storing the **EquiDesign** model code and data. **EquiDe
 The folders in the EquiDesign repository:
 
 - **Datasets**:
-	a. **CATH4.4**: A non-redundant protein structure dataset from the CATH 4.4 database.  
-	b. **TS50**: A standard benchmark dataset consisting of 50 protein structures.  
+  
+	a. **CATH4.4**: A non-redundant protein structure dataset from the CATH 4.4 database.
+
+	b. **TS50**: A standard benchmark dataset consisting of 50 protein structures.
+
 	c. **TS500**: A large-scale benchmark dataset containing 500 protein structures.  
 
 - **EquiDesign_code**: Main code file for the EquiDesign model.
