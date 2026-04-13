@@ -6,6 +6,9 @@ channels:
 dependencies:
   - python=3.10
   - pip
+  - scipy=1.10.1
+  - scikit-learn=1.2.2
+  - pandas=2.0.0
   - numpy
   - tqdm
   - matplotlib
