@@ -63,7 +63,12 @@ def evaluate_test_set(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate the model on the TS50 test set.")
     parser.add_argument("--path_for_outputs", type=str, required=True)
-    parser.add_argument("--previous_checkpoint", type=str, required=True)
+    parser.add_argument(
+        "--previous_checkpoint",
+        type=str,
+        default="../Model/model_weights/best_model.pt",
+        help="Path to model checkpoint (.pt).",
+    )
     parser.add_argument("--hidden_dim", type=int, default=128)
     parser.add_argument("--debug", type=bool, default=False)
     parser.add_argument("--num_encoder_layers", type=int, default=3)
