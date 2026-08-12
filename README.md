@@ -40,7 +40,7 @@ The folders in the EquiDesign repository:
 
   ProtSeqGen: https://github.com/NJAU-CDSIC/ProtSeqGen
 
-- **Scripts**: Contains auxiliary scripts for data processing and visualization.
+- **Scripts**: Contains auxiliary scripts for data processing, training examples, stability analysis, and pre-cutoff overlap analysis.
 
 ---
 
@@ -102,7 +102,6 @@ bash train_equidesign_cath44_example.sh
 
 - **Hybrid Score 3 (Stability)**
 
-
 ```bash
 python eval_design_hybrid_score.py all \
   --jsonl_file ../../Datasets/CATH4.4/chain_set.jsonl \
@@ -110,6 +109,24 @@ python eval_design_hybrid_score.py all \
   --checkpoint ../../EquiDesign_code/Model/model_weights/best_model.pt \
   --out_csv ./out/design_with_hybrid.csv
 ```
+
+- **Sequence similarity analysis**
+
+```bash
+python Scripts/training_set_overlap_analysis/sequence_similarity_against_rcsb.py \
+  --query-fasta native_structure.fasta \
+  --out-csv sequence_similarity.csv
+```
+
+- **Nearest structural neighbor analysis**
+
+```bash
+python Scripts/training_set_overlap_analysis/structural_neighbor_foldseek.py \
+  --targets targets.txt \
+  --mode self-hit \
+  --out-csv structural_neighbors.csv
+```
+
 
 ---
 
@@ -119,7 +136,11 @@ python eval_design_hybrid_score.py all \
 git clone https://github.com/NJAU-CDSIC/EquiDesign.git
 ```
 
-## 6. Citation
+## 6. Reproducibility
+
+The repository provides the code, pretrained model weights, and environment file used for reproduction. For exact reproduction, please use the pinned GitHub tag `v1.0.0`. The pretrained checkpoint is available at `EquiDesign_code/Model/model_weights/best_model.pt`, and the conda environment is specified in `environment.yml`.
+
+## 7. Citation
 
 If you use EquiDesign in your research, please cite:
 
